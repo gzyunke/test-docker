@@ -1,0 +1,47 @@
+{
+    "appenders": {
+        "access": {
+            "type": "dateFile",
+            "filename": "log/access/access.log",
+            "pattern": "-yyyy-MM-dd",
+            "alwaysIncludePattern": true,
+            "numBackups": 10
+        },
+        "app": {
+            "type": "file",
+            "filename": "log/app.log",
+            "maxLogSize": 10485760,
+            "numBackups": 5
+        },
+        "errorFile": {
+            "type": "file",
+            "filename": "log/errors.log"
+        },
+        "errors": {
+            "type": "logLevelFilter",
+            "level": "ERROR",
+            "appender": "errorFile"
+        },
+        "console": {
+            "type": "console"
+        }
+    },
+    "categories": {
+        "default": {
+            "appenders": [
+                "console",
+                "app",
+                "errors"
+            ],
+            "level": "DEBUG"
+        },
+        "access": {
+            "appenders": [
+                "access",
+                "console",
+                "app"
+            ],
+            "level": "TRACE"
+        }
+    }
+}

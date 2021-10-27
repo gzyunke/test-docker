@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "log4js": "^3.0.6",
+    "redis": "^4.0.0-rc.3",
+    "koa-router": "^7.4.0"
+  },
+  "scripts": {
+    "start": "cross-env PORT=8080 node app"
+  },
+  "author": "",
+  "license": "ISC"
+}
