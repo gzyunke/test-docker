@@ -6,3 +6,4 @@
 /.idea/workspace.xml
 /node_modules/*
 /log/*
+.idea/test-docker.iml
