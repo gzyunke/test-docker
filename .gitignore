@@ -4,6 +4,5 @@
 /.idea/test.iml
 /.idea/vcs.xml
 /.idea/workspace.xml
-/node_modules/*
 /log/*
 .idea/test-docker.iml
